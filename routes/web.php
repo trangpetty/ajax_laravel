@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostController;
 use App\Http\Controllers\StudentAjaxController;
 
 /*
@@ -16,6 +15,5 @@ use App\Http\Controllers\StudentAjaxController;
 */
 
 
-Route::get('/', [PostController::class, 'index']);
-Route::resource('posts', PostController::class);
+Route::get('/', [StudentAjaxController::class, 'index']);
 Route::resource('/student', StudentAjaxController::class);
